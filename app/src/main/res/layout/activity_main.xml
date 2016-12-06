@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bignerdranch.android.fragmenttext.MainActivity">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorgreeblu"
+        android:id="@+id/l"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/suger"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="成都之行"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            />
+
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/l"
+        android:paddingTop="20dp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorgreeblu"
+        app:tabTextColor="@color/colorAccent"
+        />/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+
+
+</RelativeLayout>
+
